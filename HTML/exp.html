@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+
+
+<button onclick="myFunction()">Try it</button>
+<button onclick="asgn()">Assign</button>
+<button type="button" value="Back" onclick="goforward()">go forward </button>
+<button type="button" onclick="alrt();">Alert</button>
+<button type="button" onclick="cnfrm();">Confirm</button>
+<button type="button" onclick="prmpt();">Prompt</button>
+
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<p id="demo6"></p>
+<p id="demo7"></p>
+<p id="demo8"></p>
+<p id="demo9"></p>
+<p id="demo10"></p>
+<p id="demo11"></p>
+<p id="demo12"></p>
+<p id="demo13"></p>
+<script>
+function myFunction()
+{
+                      
+document.getElementById("demo").innerHTML ="href: " +window.location.href;	
+document.getElementById("demo1").innerHTML ="hostname: " +window.location.hostname;
+document.getElementById("demo2").innerHTML ="pathname: " +window.location.pathname;
+document.getElementById("demo3").innerHTML = "protocol: " +window.location.protocol;	
+document.getElementById("demo4").innerHTML = "port: "+window.location.port;	
+document.getElementById("demo5").innerHTML ="Cookie: " +window.navigator.cookieEnabled;
+document.getElementById("demo6").innerHTML = "Application name: "+ navigator.appName;
+document.getElementById("demo7").innerHTML = "Application code name: "+navigator.appCodeName;
+document.getElementById("demo8").innerHTML = "Engine: "+ navigator.product;
+document.getElementById("demo9").innerHTML = "Version Information: "+navigator.appVersion;
+document.getElementById("demo10").innerHTML = "Platform: "+navigator.platform;
+document.getElementById("demo11").innerHTML = "Language: "+navigator.language;
+document.getElementById("demo12").innerHTML = "Online Status: "+navigator.onLine;
+document.getElementById("demo13").innerHTML = "Java Enabled: "+navigator.javaEnabled();
+};
+
+function asgn()
+{
+window.location.assign("exp1.html");
+}
+function goforward() {
+  window.history.forward()
+}
+
+
+function alrt()
+{
+  alert("This is an alert message");
+}
+
+function cnfrm()
+{
+  var x = confirm("This is an alert message");
+ // alert(x);
+  if (x==true)
+  {
+    alert("true");
+  }
+  else{
+    alert("false");
+  }
+};
+
+function prmpt()
+{
+  var y = prompt("This is an alert message");
+  alert(y);
+}
+</script>
+
+</body>
+</html>

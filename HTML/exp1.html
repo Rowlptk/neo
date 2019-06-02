@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <button type="button" onclick="x = setInterval(func,1000);">start</button>
+
+  <button type="button" onclick="clearTimeout(x);">stop</button>
+  <h1 id="demo"></h1>
+<script>
+  function func()
+  {
+    var d = new Date();
+    document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+
+  }
+
+</script>
+</body>
+</html>
