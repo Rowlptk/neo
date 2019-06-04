@@ -1,0 +1,15 @@
+h2{
+	background-color: blue;
+}
+
+body {
+  
+  
+  background: url("Scream.jpg") no-repeat center center fixed;
+}
+
+/*background-image: url("Scream.jpg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+  */
