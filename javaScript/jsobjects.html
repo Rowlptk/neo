@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id="something"></p>
+    <p id="p1" onclick="var x = func(2,4); this.innerHTML = x;">Click</p>
+    <script>
+    var fop = {
+        name : 'Suraj',
+        roll_no : 64,
+        section : 'E'
+    };
+    document.getElementById('something').innerHTML = 
+    "He is Mr. "+ fop.name +"<br>" + "Roll no = "+fop.roll_no+"<br>"+"Section = "+fop.section;
+
+    function func(x,y)
+    {
+        return x*y;
+    };
+
+    </script>
+</body>
+</html>

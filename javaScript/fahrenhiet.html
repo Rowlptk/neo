@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    Fahrenhiet: <input id="f" type="text">
+    <button id="b" onclick="celcius();">Change to Celcius</button>
+    <h2 id="res"></h2>
+
+    <script>
+    function celcius(){
+        var fah = Number(document.getElementById('f').value);
+        cel = ((5/9)*(fah-32));
+        document.getElementById('res').innerHTML = "celcius = "+cel;
+        document.getElementById('res').style.color='red';
+    };
+    </script>
+</body>
+</html>
