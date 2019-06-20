@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id="s1">This is a text</p>
+    <script>
+        var str = document.getElementById('s1').innerHTML;
+        var s = parseInt(prompt("Enter Start point"));
+        var e = parseInt(prompt("Enter a end point"));
+        alert("The Sliced String = "+ str.slice(s,e));
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    String : <input type="text" id="s1">
+    <button onclick="stringlen();">String Length</button>
+    <h3 id="len"></h3>
+    
+    <p id="s2">This is a very long very good non unicode string</p>
+    <button onclick="index();">Index Of</button>
+    <h3 id="ind"></h3>
+
+    <button onclick="lastindex();">Last Index Of</button>
+<script>
+    function stringlen(){
+        var str = document.getElementById('s1').value;
+        document.getElementById('len').innerHTML = "The String Length  is "+str.length;
+    };
+    function index()
+    {
+        var str = document.getElementById('s2').innerHTML;
+        document.getElementById('ind').innerHTML = "First Index of very is "+str.indexOf('very');
+    }
+    function lastindex()
+    {
+        var str = document.getElementById('s2').innerHTML;
+        document.getElementById('ind').innerHTML = "First Index of very is "+str.lastIndexOf('very');
+    }
+</script>
+
+</body>
+</html>
