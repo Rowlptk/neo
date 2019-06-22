@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1">This is a statement. This statement belongs to this tag.
+        this StaTement helps us to write plain text in a viewport.
+    </p>
+    <button onclick="changeText();">Replace</button>
+
+    <p id="p2">Normal Text</p>
+    <button onclick="splitText();">Split</button>
+    <script>
+    function splitText()
+    {
+        var text = document.getElementById('p2').innerHTML;
+        var ob = text.split("r");
+        alert(ob);
+        alert(ob[1]);
+        // alert("["+typeof(text.split(""))+"]");
+    };
+    function changeText()
+    {
+        var str = document.getElementById('p1').innerHTML;
+        text = str.replace(/statement/gi,'paragraph');
+        document.getElementById('p1').innerHTML = text;
+    };
+    </script>
+</body>
+</html>
