@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+        User Name : <input type="text" id="user">
+        Password  : <input type="password" id="pwd">
+        <!-- <p id="o2" style="color:red;"></p> -->
+        <button type="submit" onclick="validity1();" >submit</button>
+        <p id="o1"></p>
+<script>
+function validity1()
+{
+    var usr = document.getElementById('user').value;
+    var pwd = document.getElementById('pwd').value;
+    var patt = /^[A-Z]*$/;
+    // var pwdpatt = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/;
+    if(patt.test(usr))
+    {
+        document.getElementById('o1').innerHTML = "Success";
+        document.getElementById('o1').style.color = "green"
+    }
+    else{
+        document.getElementById('o1').innerHTML = "username is invalid";
+        document.getElementById('o1').style.color = "red";
+    }
+}
+
+
+</script>
+
+</body>
+</html>
