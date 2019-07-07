@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand">My Website</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    Page 1 <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">sub page 1</a></li>
+                        <li><a href="#">sub page 2</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Register</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div id="myCar" class="carousel slide" data-ride="carousel">
+            <!-- image halne -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="3.jpg" alt="GOT">
+                </div>
+                <div class="item">
+                    <img src="12.jpg" alt="GOT">
+                </div>
+                <div class="item">
+                    <img src="29.jpg" alt="GOT">
+                </div>
+            </div>
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <form class="form-vertical">
+            <div class="form-group col-sm-5">
+                <label for="user">Username: </label>
+                <input type="text" name="user" id="user" class="form-control">
+            </div>
+            <div class="col-sm-1"></div>
+            <div class="form-group col-sm-6">
+                <label for="pwd">Password: </label>
+                <input type="password" name="pwd" id="pwd" class="form-control">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
