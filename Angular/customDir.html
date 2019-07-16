@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Custom Directive</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body>
+    <div ng-app = "myApp">
+        <!-- element method -->
+        <my-directive></my-directive><hr>
+        <!-- attribute -->
+        <div my-directive></div><hr>
+        <!-- class -->
+        <div class="my-directive"></div><hr>
+        <!-- comment -->
+        <!-- directive: my-directive -->
+    </div>
+    <script>
+        var app = angular.module('myApp',[]);
+        app.directive('myDirective',function(){
+            return{
+            restrict: 'ACEM' ,
+            replace: true,
+            template: "<p>My Custom Directive</p>"
+            };
+        });
+    
+    </script>
+</body>
+</html>

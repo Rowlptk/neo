@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Angular Controller</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body>
+    <div ng-app="myApp" ng-controller="myCtrl">
+        <input type="checkbox" ng-model="check">
+        <div ng-show="check">
+            username: <input type="text" ng-model="user">
+            <br>
+            password: <input type="text" ng-model="pwd" ng-init = "pwd = 'admin'">
+            <p>username: {{user}} and password: {{pwd}} </p>
+        </div>
+        <h1 ng-include="'page.html'"></h1>
+        <div ng-init = "SciFi = ['Thanos', 'IronMan', 'Hulk', 'SpiderMan', 'AntMan', 'CaptainAmerica']">
+            <ul>
+                <li ng-repeat = 'sup in SciFi'>{{sup}}</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+    var app = angular.module('myApp',[]);
+    app.controller('myCtrl',function($scope){
+        $scope.user = 'Admin';
+        $scope.pwd = '';
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Search Filter</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+</head>
+<body>
+    <div ng-app="myApp" ng-controller="myCtrl">
+        <input type="text" ng-model="suraj">
+        <ul>
+            <li ng-repeat="x in nonliv | filter:suraj">{{x}}</li>
+        </ul>
+    </div>
+    <script>
+        var app = angular.module('myApp',[]);
+        app.controller('myCtrl',function($scope){
+            $scope.nonliv = ['car','table','chair','book','aeroplane','bench','desk','door','chalk'];
+        });
+    </script>
+</body>
+</html>

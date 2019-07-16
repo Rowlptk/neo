@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>filter</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+</head>
+<body>
+    <div ng-app="myApp" ng-controller="myCtrl">
+        <input type="text" ng-model="usr">
+        <p>{{usr | uppercase}}</p>
+        <p>{{usr | lowercase}}</p>
+
+        <input type="number" ng-model="curr">
+        <p>{{curr | currency}}</p>
+        <p>{{curr | currency:"&pound;"}}</p>
+        <p>{{curr | currency:"Nrs."}}</p>
+
+        <p>{{today | date}}</p>
+        <p>{{today | date:"dd/MM/y"}}</p>
+        <p>{{today | date:"short"}}</p>
+        <p>{{today | date:"shortDate"}}</p>
+        <p>{{today | date:"medium"}}</p>
+        <p>{{today | date:"mediumDate"}}</p>
+    </div>
+    <script>
+        var app= angular.module('myApp',[]);
+        app.controller('myCtrl',function($scope){
+            $scope.today = new Date();
+        });
+    
+    </script>
+</body>
+</html>
